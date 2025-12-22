@@ -4,7 +4,7 @@
 Time: 12/21/2025 - 01/20/2026
 Dialy 2 - 3 hours
 Prepare for the spring semester courses and learn to build a small github project for my future study.
-> Note: I'm trying a new study method this winter: learin in small steps and ship something every day, which can make my progress more visible and measurable.
+> Note: I'm trying a new study method this winter: learn in small steps and ship something every day, which can make my progress more visible and measurable.
 
 ## Repository Map
 - `econ303_macro/`           — Macro pre-study 
