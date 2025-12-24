@@ -1,0 +1,11 @@
+# C++ build outputs
+*.exe
+*.obj
+*.pdb
+*.ilk
+
+# MSVC/Visual Studio
+vc*.pdb
+
+# VS Code settings (optional)
+.vscode/
