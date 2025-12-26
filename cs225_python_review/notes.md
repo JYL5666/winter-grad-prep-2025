@@ -26,3 +26,30 @@
   - Iterative: O(1)
   - Recursive: O(h) due to call stack
     Each time a function is called, the system saves a "stack frame" in the call stack. If you walk h levels along the tree, there will be approximately h simultaneous "pressing" calls on the stack
+
+# Linked List Notes
+
+## Definition
+- Singly Linked List: nodes connected by next pointers.
+- Each node stores: (value,next)
+- Head points to first node; tail points to last node
+
+## Core operations
+- push_front(x): insert at head
+- push_back(x): insert at tail 
+- find(x): traverse until found
+- traverse/ to_list(): walk through nodes
+
+## Complexity
+- Time:
+  - push_front: O(1)
+  - push_back: O(1) if we keep `tail`, otherwise O(n)
+  - find / traverse: O(n)
+- Space (extra space):
+  - push_front/push_back/find: O(1)
+  - to_list: O(n) (creates a Python list)
+- Total storage: O(n) nodes
+
+## Common pitfalls
+- Forgetting to update `tail` when inserting into an empty list.
+- missing `None` checks when traversing (cur becomes None).
