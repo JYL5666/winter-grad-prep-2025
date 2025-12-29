@@ -31,6 +31,35 @@ GPA: 4
 Enter your age:-1
 invalid age
 
-## Common pitfalls (at least 2)
+## Common pitfalls 
 - 1) Mixing up stream operators: output uses 'cout << ...', input uses 'cin >>...'
 - 2) Missing spaces/newlines in output
+
+# Control Flow (if/else)
+
+## Key points from LearnCpp
+- 1) `if` statements let your program execute different code paths depending on whether a condition is true or false. The condition is an expression that evaluates to a boolean (`true`/`false`).
+- 2) `else if` creates a chain of mutually exclusive tests. Once one condition is true, the rest of the chain is skipped. The order of conditions matters (check the most restrictive/highest priority first).
+
+## Program: control.cpp
+### What the program does
+- Reads an integer score (0–100)
+- Validates input type (not a number → error)
+- Validates range (out of range → error)
+- Uses an `if / else if / else` chain to print a letter grade (A/B/C/D/F)
+
+### Run log (paste terminal output)
+#### Run 1 (normal input)
+Input: 69
+Output: D
+Enter score (0-100): 69
+D
+
+#### Run 2 (edge input)
+Input: -1
+Output: Out of range. 
+Enter score (0 - 100): -1
+Out of range. 
+
+## Common pitfalls (at least 2)
+- Often forget to add ";"
