@@ -53,3 +53,27 @@
 ## Common pitfalls
 - Forgetting to update `tail` when inserting into an empty list.
 - missing `None` checks when traversing (cur becomes None).
+
+# Stack / Queue (Python)
+
+## Key points
+- 1) Stack = LIFO. Core ops: push/pop/peek. Using Python list: append/pop are O(1) amortized.
+- 2) Queue = FIFO. Core ops: enqueue/dequeue/peek. Using collections.deque: append/popleft are O(1).
+
+## Program: stack_queue.py
+### What the program does
+- Implements Stack (list) and Queue (deque)
+- Runs tests for normal case and empty-structure edge case
+
+### Run log
+#### Run 1 (normal)
+Output:
+All tests passed.
+
+## Performance bottlenecks
+- 1) list.pop(0) is O(n) because all elements shift left.
+- 2) deque.popleft() is O(1), better for queue.
+
+## Common pitfalls
+- 1) Confusing LIFO (stack) and FIFO (queue)
+- 2) Using list as a queue with pop(0) makes it slow for large n
