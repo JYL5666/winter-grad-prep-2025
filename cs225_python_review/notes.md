@@ -77,3 +77,18 @@ All tests passed.
 ## Common pitfalls
 - 1) Confusing LIFO (stack) and FIFO (queue)
 - 2) Using list as a queue with pop(0) makes it slow for large n
+
+# Hash Table
+
+## Definition:
+- A hash table stores (key, value). It uses hash(key) to map a key to an index in an array buckets.
+
+## Ops:
+- put(key, value): insert or update value for a key.
+- get(key): return value for a key, raise key error if missing.
+-uodate(key,value): same as put in my implementation.
+
+## Complexity:
+- Average: put/get O(1)
+- Worst: O(n) if many keys collide into one bucket
+- Space: O(n + m) where n = number of items, m = number of buckets
